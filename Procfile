@@ -1,0 +1,1 @@
+web: gunicorn que_comer.wsgi

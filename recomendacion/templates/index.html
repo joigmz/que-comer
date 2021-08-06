@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Recomendacion</h1>
+{% for key, value in recomendacion.items %}
+<h2>{{key}}</h2>
+<ul>
+    {% for alimento in value %}
+        <li>{{alimento}}</li>
+    {%endfor%}
+</ul>
+{%endfor%}
+
+{% endblock %}
